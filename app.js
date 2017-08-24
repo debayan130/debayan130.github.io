@@ -16,6 +16,10 @@ app.config(function($routeProvider,$locationProvider){
         templateUrl: 'games.html',
         controller: "gameCtrl"
         })
+        .when('/others',{
+        templateUrl: 'others.html',
+        controller: "othersCtrl"
+        })
         .when('/',{
         template: '',
         controller: "myCtrl"
@@ -45,6 +49,10 @@ app.controller('vbCtrl',function($scope,$rootScope){
     }
 );*/
 app.controller('gameCtrl',function($scope,$rootScope){
+    $rootScope.caro=false;
+    }
+);
+app.controller('othersCtrl',function($scope,$rootScope){
     $rootScope.caro=false;
     }
 );
