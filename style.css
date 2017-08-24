@@ -3,3 +3,28 @@
 text-align: justify;
     text-indent: 50px;
 }
+.vb{
+    padding:100px;
+    background-image: url(image/back.jpeg);
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-size: auto;
+    
+    
+    
+}
+.title{
+    
+    color: gray;
+     text-shadow: 3px 2px red;
+}
+.article{
+ 
+    color: lightgray;
+    padding:100px;
+    word-spacing: 10px;
+    font-size:20px;
+}
+.pad{
+ padding: 100px;   
+}

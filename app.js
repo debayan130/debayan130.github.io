@@ -8,6 +8,14 @@ app.config(function($routeProvider,$locationProvider){
         templateUrl: 'aboutme.html',
         controller: "aboutmeCtrl"
         })
+        .when('/vb',{
+        templateUrl: 'vb.html',
+        controller: "vbCtrl"
+        })
+        .when('/games',{
+        templateUrl: 'games.html',
+        controller: "gameCtrl"
+        })
         .when('/',{
         template: '',
         controller: "myCtrl"
@@ -26,9 +34,17 @@ app.controller('aboutmeCtrl',function($scope,$rootScope){
     
     }
 );
+app.controller('vbCtrl',function($scope,$rootScope){
+    $rootScope.caro=false;
+    }
+);
 /*app.controller('homeCtrl',function($scope,$rootScope){
     console.log("home called");
     $rootScope.caro=true;
     
     }
 );*/
+app.controller('gameCtrl',function($scope,$rootScope){
+    $rootScope.caro=false;
+    }
+);
