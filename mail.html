@@ -7,35 +7,73 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      position: relative;
+  }
+  ul.nav-pills {
+      top: 20px;
+      position: fixed;
+  }
+  div.col-sm-9 div {
+      height: 500px;
+      font-size: 28px;
+  }
+  #section1 {color: #fff; background-color: #1E88E5;}
+  #section2 {color: #fff; background-color: #673ab7;}
+  #section3 {color: #fff; background-color: #ff9800;}
+  #section4 {color: #fff; background-color: #00bcd4;}
+  
+  
+  @media screen and (max-width: 810px) {
+    #section1, #section2, #section3, #section41, #section42  {
+        margin-left: 150px;
+    }
+  }
+  </style>
 </head>
-<body>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
 
 <div class="container">
-  <h2>Modal Example</h2>
-  <!-- Trigger the modal with a button -->
-  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
-
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
-        </div>
-        <div class="modal-body">
-          <p>Some text in the modal.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
+  <div class="row">
+    <nav class="col-sm-3" id="myScrollspy">
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="#section1">Unity Introduction</a></li>
+        <li><a href="#section2">Roll a ball</a></li>
+        <li><a href="#section3">Space shooter</a></li>
+        <li><a href="#section4">Zombie</a></li>
+      </ul>
+    </nav>
+    <div class="col-sm-9">
+      <div id="section1">    
+        <h1>Unity </h1>
+        <blockquote>
+    <p>Unity is a cross-platform game engine developed by Unity Technologies, which is primarily used to develop video games and simulations for computers, consoles and mobile devices. First announced only for OS X, at Apple's Worldwide Developers Conference in 2005, it has since been extended to target 27 platforms.</p>
+    <footer>From Wikipedia</footer>
+  </blockquote>
+           <center>
+            <iframe width="640" height="300px" src="https://www.youtube.com/embed/8tPnX7OPo0Q?rel=0" frameborder="0" allowfullscreen></iframe>
+        </center>
       </div>
+      <div id="section2"> 
+        <h1>Roll a ball</h1>
+        <p>It is my first small game unsing unity with the help of <a href="https://unity3d.com/learn/tutorials/projects/roll-ball-tutorial">Unity official tutorials</a></p>
+        <center>
+            <iframe width="640" height="300px" src="https://www.youtube.com/embed/8tPnX7OPo0Q?rel=0" frameborder="0" allowfullscreen></iframe>
+        </center>
+        
+      </div>        
+      <div id="section3">         
+        <h1>Space shooter</h1>
+        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+      </div>
+      <div id="section4">         
+        <h1>Zombie</h1>
+        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+      </div>      
       
     </div>
   </div>
-  
 </div>
 
 </body>
